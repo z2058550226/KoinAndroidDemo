@@ -43,9 +43,9 @@ class MainActivity : AppCompatActivity() {
         Timber.e("mainViewModel.name: ${mainViewModel.name}")
         mainViewModel.someName.observe(this, Observer { Timber.e("mainViewModel.someName: $it") })
 
-//        supportFragmentManager.beginTransaction()
-//                .replace(R.id.content, MyFragment::class.java, null, null)
-//                .commit()
+        supportFragmentManager.beginTransaction()
+                .replace(R.id.content, MyFragment::class.java, null, null)
+                .commit()
         root_layout.addView(applicationView)
     }
 

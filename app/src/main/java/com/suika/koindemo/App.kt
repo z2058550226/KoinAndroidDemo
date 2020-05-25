@@ -58,8 +58,13 @@ class App : Application() {
 
                         // fragment { MyFragment() }
                         // scoped fragment
-                        scope<MainActivity> {
+//                        scope<MainActivity> {
+//                            fragment { MyFragment() }
+//                        }
+
+                        scope<MainActivity3> {
                             fragment { MyFragment() }
+                            scoped { Toy(1,"goose") }
                         }
                     },
                     module {
